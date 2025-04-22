@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Importa el componente
+import { faBoxesStacked } from '@fortawesome/free-solid-svg-icons'; // Importa el icono
+import Header from './components/header';
+import Footer from './components/footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   <div>
+    <Header />
+    <div className='bg-gray-100 min-h-screen flex items-center justify-center'> 
+
     </div>
+    <Footer />
+   </div>
   );
 }
 
