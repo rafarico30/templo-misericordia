@@ -8,7 +8,7 @@ function Header() {
 
   return (
     <header className="bg-header text-white shadow-md">
-      <div className="flex justify-between items-center py-4 px-6 md:px-12">
+      <div className="flex justify-between items-center py-2 px-6 md:px-12">
         {/* Logo */}
         <div className="flex items-center">
           <img src={logo} alt="Logo" className="h-14 w-14 mr-4" />
@@ -30,27 +30,27 @@ function Header() {
         >
           <ul className="flex flex-col md:flex-row md:space-x-6 items-center md:items-center md:ml-auto">
             <li>
-              <a href="#inicio" className="block py-2 px-4 text-xl font-bold hover:text-gray-300">
+              <a href="#inicio" className="block py-2 px-4 text-lg font-bold hover:text-gray-300">
                 Inicio
               </a>
             </li>
             <li>
-              <a href="#nosotros" className="block py-2 px-4 text-xl font-bold hover:text-gray-300">
+              <a href="#nosotros" className="block py-2 px-4 text-lg font-bold hover:text-gray-300">
                 Nosotros
               </a>
             </li>
             <li>
-              <a href="#grupos" className="block py-2 px-4 text-xl font-bold hover:text-gray-300">
+              <a href="#grupos" className="block py-2 px-4 text-lg font-bold hover:text-gray-300">
                 Grupos
               </a>
             </li>
             <li>
-              <a href="#historia" className="block py-2 px-4 text-xl font-bold hover:text-gray-300">
+              <a href="#historia" className="block py-2 px-4 text-lg font-bold hover:text-gray-300">
                 Historia
               </a>
             </li>
             <li>
-              <a href="#contacto" className="block py-2 px-4 text-xl font-bold hover:text-gray-300">
+              <a href="#contacto" className="block py-2 px-4 text-lg font-bold hover:text-gray-300">
                 Contacto
               </a>
             </li>

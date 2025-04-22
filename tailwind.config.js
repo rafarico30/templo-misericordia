@@ -6,8 +6,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'header': '#7E0F1E', // Azul personalizado
-        'footer': '#DCCBC3', // Gris claro personalizado
+        'header': '#7E0F1E', 
+        'footer': '#DCCBC3', 
+      },
+      fontFamily: {
+        'serif': ['Georgia', 'serif'], 
       },
     },
   },
