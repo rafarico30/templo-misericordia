@@ -8,6 +8,7 @@ module.exports = {
       colors: {
         'header': '#7E0F1E', 
         'footer': '#DCCBC3', 
+        'maroon': '#5C2C2C',
       },
       fontFamily: {
         'serif': ['Georgia', 'serif'], 

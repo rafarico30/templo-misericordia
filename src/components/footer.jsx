@@ -1,9 +1,9 @@
 import React from 'react';
-import facebookIcon from '../assets/facebook.png';
-import spotifyIcon from '../assets/spotify.png';
-import gpsIcon from '../assets/gps.png';
-import smartphoneIcon from '../assets/smartphone.png';
-import mailIcon from '../assets/email.png';
+import facebookIcon from '../assets/footer/facebook.png';
+import spotifyIcon from '../assets/footer/spotify.png';
+import gpsIcon from '../assets/footer/gps.png';
+import smartphoneIcon from '../assets/footer/smartphone.png';
+import mailIcon from '../assets/footer/email.png';
 
 function Footer() {
   const currentYear = new Date().getFullYear(); // Obtiene el año actual
@@ -11,7 +11,6 @@ function Footer() {
   return (
     <footer className="bg-footer text-white py-6">
       <div className="flex flex-col items-center">
-        {/* Íconos */}
         <div className="flex space-x-6 mb-4">
           <a
             href="https://www.facebook.com/profile.php?id=100066922358776"
