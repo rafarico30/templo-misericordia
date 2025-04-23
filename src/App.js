@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
+import Carousel from './components/carousel';
 import backgroundImage from './assets/background.jpg';
 import cristoAmigoImage from './assets/groups/cristo-amigo/photo1.jpg';
 import misas from './assets/services/misas.png';
@@ -34,7 +35,7 @@ function App() {
       <div className="bg-gray-100 flex flex-col items-center justify-center py-12 px-4">
         <h2 className="text-5xl font-serif text-center mb-10">Grupos parroquiales</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 w-full max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-24 w-full max-w-6xl">
           <div className="bg-white rounded-xl overflow-hidden flex flex-col shadow-none transition-shadow duration-300 cursor-pointer hover:shadow-lg hover:shadow-gray-400">
             <img src={cristoAmigoImage} alt="Cristo Amigo" className="w-full h-full object-cover" />
             <div className="p-6 text-left">
@@ -84,6 +85,12 @@ function App() {
                 <p className="font-medium leading-tight">Comunidad<br />parroquial</p>
                 </div>
             </div>
+            </div>
+
+            <div>
+            <h2 className="text-5xl font-serif text-center mt-10">Nuestra historia</h2>
+
+            <Carousel />
             </div>
       </div>
 
