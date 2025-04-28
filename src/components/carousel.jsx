@@ -11,27 +11,25 @@ const carouselItems = [
   },
   {
     image: photo2,
-    title: "Encuentro de fe",
-    description: "Una tarde llena de reflexión y oración comunitaria",
+    title: "Lorem Ipsum",
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing",
   },
   {
     image: photo3,
-    title: "Catequesis infantil",
-    description: "Educación religiosa para los más pequeños",
+    title: "Lorem Ipsum",
+    description: "Lorem ipsum dolor sit amet consectetur adipiscing",
   },
 ];
 
 function Carousel() {
   const [current, setCurrent] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-
-  // Cambiar automáticamente de slide cada 5 segundos
   useEffect(() => {
     const interval = setInterval(() => {
       handleNextSlide();
-    }, 5000); // Cambia cada 5000ms (5 segundos)
+    }, 5000); 
 
-    return () => clearInterval(interval); // Limpia el intervalo al desmontar el componente
+    return () => clearInterval(interval);
   }, []);
 
   const handleNextSlide = () => {
@@ -40,7 +38,7 @@ function Carousel() {
       setTimeout(() => {
         setCurrent((prev) => (prev + 1) % carouselItems.length);
         setIsAnimating(false);
-      }, 500); // Duración de la animación
+      }, 500);
     }
   };
 
@@ -50,13 +48,12 @@ function Carousel() {
       setTimeout(() => {
         setCurrent((prev) => (prev - 1 + carouselItems.length) % carouselItems.length);
         setIsAnimating(false);
-      }, 500); // Duración de la animación
+      }, 500); 
     }
   };
 
   return (
     <div className="relative w-full max-w-3xl mx-auto mt-16 rounded-xl overflow-hidden border-4 border-gray-100 shadow-xl">
-      {/* Contenedor de las imágenes con animación */}
       <div
         className={`w-full h-[480px] flex transition-transform duration-500 ease-in-out`}
         style={{
