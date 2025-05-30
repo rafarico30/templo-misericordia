@@ -12,6 +12,7 @@ module.exports = {
       },
       fontFamily: {
         'serif': ['Georgia', 'serif'], 
+        script: ['"Great Vibes"', 'cursive'],  
       },
     },
   },
