@@ -5,6 +5,8 @@ import Header from './components/header';
 import { motion } from "framer-motion";
 import Footer from './components/footer';
 import Nosotros from './components/Nosotros.jsx';
+import Groups from './components/groups.jsx';
+import CristoAmigo from './components/grupos/cristoAmigo.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import backgroundImage from './assets/background2.jpg';
@@ -391,6 +393,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/grupos" element={<Groups />} />
+        <Route path="/cristoAmigo" element={<CristoAmigo />} />
       </Routes>
     </Router>
   );

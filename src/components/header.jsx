@@ -59,7 +59,7 @@ function Header() {
               </Link>
             </li>
             <li>
-              <a href="#grupos" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
+              <a href="/grupos" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
                 Grupos
               </a>
             </li>
