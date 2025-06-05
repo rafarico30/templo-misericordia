@@ -116,7 +116,7 @@ const sliderSettings = {
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
                 </p>
                 <p className="text-lg text-gray-500">
-                  Ornare aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
+                  Ornare2 aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
                 </p>
               </motion.div>
               <motion.div
