@@ -8,6 +8,7 @@ import Nosotros from './components/Nosotros.jsx';
 import Groups from './components/groups.jsx';
 import CristoAmigo from './components/grupos/cristoAmigo.jsx';
 import History from './components/historia.jsx';
+import Contact from './components/contacto.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import backgroundImage from './assets/background2.jpg';
@@ -313,7 +314,7 @@ function Home() {
           className="w-[28rem] h-[32rem] object-cover rounded-2xl mb-6 shadow-lg"
         />
         <h3 className="text-3xl font-bold mb-2">Pbro. Liberio</h3>
-        <p className="text-gray-600 text-lg">Vicario</p>
+        <p className="text-gray-600 text-lg">Auxiliar</p>
       </motion.div>
     </div>
   </div>
@@ -396,7 +397,8 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/grupos" element={<Groups />} />
         <Route path="/cristoAmigo" element={<CristoAmigo />} />
-        <Route path ="/historia" element= {<History />} />
+        <Route path ="/historia" element= {<History/>} />
+        <Route path ="/contacto" element= {<Contact/>} />
       </Routes>
     </Router>
   );

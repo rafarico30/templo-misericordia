@@ -69,7 +69,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#contacto" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
+              <a href="/contacto" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
                 Contacto
               </a>
             </li>
