@@ -12,6 +12,7 @@ import Contact from './components/contacto.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import backgroundImage from './assets/background2.jpg';
+import ModalServicio from './components/ModalServicio.jsx';
 import cristoAmigoImage from './assets/groups/cristo-amigo/photo1.jpg';
 import misas from './assets/services/misas.png';
 import notaria from './assets/services/notaria.png';
@@ -24,6 +25,16 @@ import catequesisImage from './assets/groups/catequesis/photo1.jpg';
 import nosotros3 from './assets/nosotros/nosotros2.jpg'; // Ajusta la extensión si es diferente
 function Home() { 
   const navigate = useNavigate(); 
+  const [modalOpen, setModalOpen] = React.useState(false);
+  const [servicioActual, setServicioActual] = React.useState(null);
+
+  const abrirModal = (servicio) => {
+    setServicioActual(servicio);
+    setModalOpen(true);
+  };
+
+  const cerrarModal = () => setModalOpen(false);
+
   return (
     <div>
       <Header />
@@ -54,7 +65,7 @@ function Home() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
       >
-        Somos una comunidad cristiana al servicio de la fe, la esperanza y la caridad.
+        Somos una comunidad católica al servicio de la fe, la esperanza y la caridad.
       </motion.p>
     <motion.div
   className="flex gap-4"
@@ -88,7 +99,8 @@ function Home() {
         <p className="text-gray-600 mb-4">
           Celebración de la Eucaristía todos los domingos para toda la comunidad.
         </p>
-        <button className="text-header font-semibold hover:underline">Más información</button>
+        <button className="text-header font-semibold hover:underline" onClick={() => abrirModal('misas')}
+        >Más información</button>
       </motion.div>
       {/* Servicio 2 */}
       <motion.div
@@ -103,7 +115,8 @@ function Home() {
         <p className="text-gray-600 mb-4">
           Trámites y documentos eclesiásticos para los fieles de la parroquia.
         </p>
-        <button className="text-header font-semibold hover:underline">Más información</button>
+        <button className="text-header font-semibold hover:underline"
+        onClick={() => abrirModal('notaria')}>Más información</button>
       </motion.div>
       {/* Servicio 3 */}
       <motion.div
@@ -118,7 +131,8 @@ function Home() {
         <p className="text-gray-600 mb-4">
           Espacios de adoración y oración ante el Santísimo Sacramento.
         </p>
-        <button className="text-header font-semibold hover:underline">Más información</button>
+        <button className="text-header font-semibold hover:underline"
+        onClick={() => abrirModal('horasSantas')}>Más información</button>
       </motion.div>
       {/* Servicio 4 */}
       <motion.div
@@ -133,7 +147,8 @@ function Home() {
         <p className="text-gray-600 mb-4">
           Bautizos, primeras comuniones, confirmaciones, matrimonios y más.
         </p>
-        <button className="text-header font-semibold hover:underline">Más información</button>
+        <button className="text-header font-semibold hover:underline"
+        onClick={() => abrirModal('sacramentos')}>Más información</button>
       </motion.div>
       {/* Servicio 5 */}
       <motion.div
@@ -148,7 +163,8 @@ function Home() {
         <p className="text-gray-600 mb-4">
           Espacios de encuentro, formación y servicio para toda la comunidad.
         </p>
-        <button className="text-header font-semibold hover:underline">Más información</button>
+        <button className="text-header font-semibold hover:underline"
+        onClick={() => abrirModal('comunidad')}>Más información</button>
       </motion.div>
     </div>
   </div>
@@ -278,7 +294,7 @@ function Home() {
     </div>
   </div>
 </section>
-         
+    <ModalServicio open={modalOpen} onClose={cerrarModal} servicio={servicioActual} />   
          <section className="w-full py-24 bg-white">
   <div className="max-w-screen-xl mx-auto px-4">
     <h2 className="text-5xl font-bold text-center mb-4">Nuestros sacerdotes</h2>

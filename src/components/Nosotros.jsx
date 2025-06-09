@@ -93,6 +93,44 @@ function Nosotros() {
           </div>
         </section>
 
+<section className="w-full py-24 bg-white">
+  <div className="container mx-auto">
+    {/* Sección Patrono: texto izquierda, foto derecha */}
+   <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
+  {/* Foto a la izquierda */}
+  <motion.div
+    className="md:w-1/2 w-full px-4 flex justify-center"
+    initial={{ opacity: 0, x: -60 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    viewport={{ once: false }}
+  >
+    <img
+      src={require('../assets/padres/divina-misericordia.jpg')}
+      alt="El Señor de la Misericordia"
+      className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
+    />
+  </motion.div>
+  {/* Texto a la derecha */}
+  <motion.div
+    className="md:w-1/2 w-full px-4"
+    initial={{ opacity: 0, x: 60 }}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ duration: 0.8, ease: "easeOut" }}
+    viewport={{ once: true }}
+  >
+    <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-header">El Señor de la Misericordia</h2>
+    <p className="text-xl text-gray-600 mb-6">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
+    </p>
+    <p className="text-lg text-gray-500">
+      Ornare aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Suspendisse potenti. Etiam facilisis, erat nec laoreet dictum, urna erat dictum massa, ac dictum enim erat nec enim.
+    </p>
+  </motion.div>
+</div>  
+  </div>
+</section>
+
     <section className="w-full py-24 bg-white">
   <div className="container mx-auto">
     {/* Primer bloque: texto izquierda, foto derecha */}
@@ -160,41 +198,7 @@ function Nosotros() {
   </div>
 </section>
 
-<section className="w-full py-24 bg-white">
-  <div className="container mx-auto">
-    {/* Sección Patrono: texto izquierda, foto derecha */}
-    <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
-      <motion.div
-        className="md:w-1/2 w-full px-4"
-        initial={{ opacity: 0, x: -60 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-header">El Señor de la Misericordia</h2>
-        <p className="text-xl text-gray-600 mb-6">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
-        </p>
-        <p className="text-lg text-gray-500">
-          Ornare aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere. Suspendisse potenti. Etiam facilisis, erat nec laoreet dictum, urna erat dictum massa, ac dictum enim erat nec enim.
-        </p>
-      </motion.div>
-      <motion.div
-        className="md:w-1/2 w-full px-4 flex justify-center"
-        initial={{ opacity: 0, x: 60 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        viewport={{ once: false }}
-      >
-        <img
-          src={require('../assets/padres/divina-misericordia.jpg')}
-          alt="El Señor de la Misericordia"
-          className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
-        />
-      </motion.div>
-    </div>
-  </div>
-</section>
+
       </>
       <Footer />
     </div>
