@@ -12,6 +12,11 @@ import camp2 from '../../assets/groups/cristo-amigo/campamento2.jpg';
 import camp3 from '../../assets/groups/cristo-amigo/campamento3.jpg';
 import portada1 from '../../assets/groups/cristo-amigo/portada1.jpg';
 import portada2 from '../../assets/groups/cristo-amigo/portada2.jpg';
+import portada3 from '../../assets/groups/cristo-amigo/portada3.jpg';
+import sabados1 from '../../assets/groups/cristo-amigo/sabados1.jpg';
+import actividades1 from '../../assets/groups/cristo-amigo/actividades1.jpg';
+import actividades2 from '../../assets/groups/cristo-amigo/actividades2.jpg';
+import actividades3 from '../../assets/groups/cristo-amigo/actividades3.jpg';
 
 import { motion } from "framer-motion";
 function CristoAmigo() {
@@ -89,7 +94,7 @@ const sliderSettings = {
                     viewport={{ once: false }}
                   >
                     <img
-                      src={portada1}
+                      src={portada3}
                       alt="Nosotros 2"
                       className="w-full h-full rounded-2xl object-cover"
                     />
@@ -111,12 +116,80 @@ const sliderSettings = {
                 transition={{ duration: 0.8, ease: "easeOut" }}
                 viewport={{ once: true }}
               >
+                <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Sábados de Cristo Amigo</h2>
+                <p className="text-xl text-gray-600 mb-6">
+                  Cada sábado, el grupo se reúne para compartir momentos de oración, reflexión y actividades recreativas. Estas reuniones son una oportunidad para fortalecer la amistad y el compañerismo entre los jóvenes Y adolescentes de nuestra parroquia.
+                  </p>
+                <p className="text-lg text-gray-500">
+                  La cita es cada sábado a las 4:30 p.m. en el atrio parroquial. Todos los jóvenes y adolescentes están invitados a unirse a nosotros en este espacio de crecimiento espiritual y diversión.
+                </p>
+              </motion.div>
+              <motion.div
+                className="md:w-1/2 w-full px-4 flex justify-center"
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
+                <Slider {...sliderSettings} className="w-full max-w-xl">
+                  <img src={sabados1} alt="Sabados 1" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                  <img src={retiro2} alt="Retiros 2" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                  <img src={retiro3} alt="Retiros 3" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                </Slider>
+              </motion.div>
+            </div>
+            {/* Segundo bloque: foto izquierda, texto derecha */}
+            <div className="flex flex-col md:flex-row-reverse items-center gap-12">
+              <motion.div
+                className="md:w-1/2 w-full px-4"
+                initial={{ opacity: 0, x: 60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false }}
+              >
+                <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Actividades grupales</h2>
+                <p className="text-xl text-gray-600 mb-6">
+                 Desde actividades en el bosque Cuauhtémoc hasta peregrinaciones hacia el cerro del Cubilete, el grupo Cristo Amigo se caracteriza por buscar siempre nuevas formas de fortalecer la fe y la amistad entre sus miembros. Estas actividades no solo son momentos de diversión, sino también de reflexión y crecimiento espiritual.
+                 </p>
+                <p className="text-lg text-gray-500">
+                  Cada año gracias a nuestros asesores se organizan nuevas actividades llenas de emoción y aprendizaje, ¡Que esperas para unirte a nosotros y vivir estas experiencias inolvidables!
+                  </p>
+              </motion.div>
+              <motion.div
+                className="md:w-1/2 w-full px-4 flex justify-center"
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+                viewport={{ once: false }}
+              >
+                <Slider {...sliderSettings} className="w-full max-w-xl">
+                  <img src={actividades1} alt="Actividades 1" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                  <img src={actividades2} alt="Actividades 2" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                  <img src={actividades3} alt="Actividades 3" className="rounded-3xl object-cover w-full h-[400px] shadow-lg" />
+                </Slider>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+
+ <section className="w-full py-24 bg-white">
+          <div className="container mx-auto">
+            {/* Primer bloque: texto izquierda, foto derecha */}
+            <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
+              <motion.div
+                className="md:w-1/2 w-full px-4"
+                initial={{ opacity: 0, x: -60 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+                viewport={{ once: true }}
+              >
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Retiros</h2>
                 <p className="text-xl text-gray-600 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
-                </p>
+                  Los retiros espirituales son parte fundamental de la formación del grupo Cristo Amigo. Estos retiros se realizan varias veces al año y son una oportunidad para desconectarse de la vida diaria y profundizar en tu relación con Dios.
+                   </p>
                 <p className="text-lg text-gray-500">
-                  Ornare aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
+                 Existen para jóvenes y adolescentes, si estás interesado en participar, no dudes en contactarnos para más información. ¡Tu no estás solo, Cristo está contigo!
                 </p>
               </motion.div>
               <motion.div
@@ -144,10 +217,10 @@ const sliderSettings = {
               >
                 <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Campamentos</h2>
                 <p className="text-xl text-gray-600 mb-6">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui vivamus arcu felis bibendum ut tristique et egestas quis.
-                </p>
+                 Los campamentos son una de las actividades más esperadas por los miembros del grupo Cristo Amigo. Estos eventos se realizan en lugares especiales y ofrecen una experiencia única de convivencia, espiritualidad y diversión.
+                 </p>
                 <p className="text-lg text-gray-500">
-                  Ornare aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
+                  Durante los campamentos, los jóvenes participan en actividades al aire libre, dinámicas de grupo y momentos de reflexión. Estas experiencias fortalecen los lazos entre los miembros del grupo y les permiten crecer en su fe y amistad.
                 </p>
               </motion.div>
               <motion.div
@@ -166,7 +239,6 @@ const sliderSettings = {
             </div>
           </div>
         </section>
-
       <Footer />
     </div>
   );
