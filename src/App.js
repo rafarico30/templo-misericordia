@@ -7,6 +7,14 @@ import Footer from './components/footer';
 import Nosotros from './components/Nosotros.jsx';
 import Groups from './components/groups.jsx';
 import CristoAmigo from './components/grupos/cristoAmigo.jsx';
+import Catequesis from './components/grupos/catequesis.jsx';
+import CenOracion from './components/grupos/cenOracion.jsx';
+import Dinamicas from './components/grupos/dinamicas.jsx';
+import Kermes from './components/grupos/kermes.jsx';
+import Liturgia from './components/grupos/liturgia.jsx';
+import Monaguillos from './components/grupos/monaguillos.jsx';
+import Pastoral from './components/grupos/pastoral.jsx';
+import PastoralSocial from './components/grupos/pastoralSocial.jsx';
 import History from './components/historia.jsx';
 import Contact from './components/contacto.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -412,8 +420,16 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/grupos" element={<Groups />} />
-        <Route path="/cristoAmigo" element={<CristoAmigo />} />
         <Route path ="/historia" element= {<History/>} />
+        <Route path ="/catequesis" element= {<Catequesis/>} />
+        <Route path ="/cenaculosOracion" element= {<CenOracion/>} />
+        <Route path="/cristoAmigo" element={<CristoAmigo />} />
+        <Route path ="/dinamicasMatrimoniales" element= {<Dinamicas/>} />
+        <Route path ="/coordinadorasKermes" element= {<Kermes/>} />
+        <Route path ="/liturgia" element= {<Liturgia/>} />
+        <Route path ="/monaguillos" element= {<Monaguillos/>} />
+        <Route path ="/pastoral" element= {<Pastoral/>} />
+        <Route path ="/pastoralSocial" element= {<PastoralSocial/>} />
         <Route path ="/contacto" element= {<Contact/>} />
       </Routes>
     </Router>

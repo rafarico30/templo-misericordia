@@ -63,7 +63,7 @@ function Contacto() {
             >
               <FontAwesomeIcon icon={faMapMarkerAlt} className="text-5xl mb-6 text-yellow-400" />
               <h3 className="text-2xl font-bold mb-2 text-gray-900 text-center">Dirección</h3>
-              <p className="text-gray-500 text-center">Av Pedregal 624A, La Colina, 58140 Morelia, Mich.</p>
+              <p className="text-gray-500 text-center">Grafito #39, Infonavit La Colina, Morelia Michoacán.</p>
             </motion.div>
             {/* Horarios */}
             <motion.div
