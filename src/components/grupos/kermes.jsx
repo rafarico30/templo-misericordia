@@ -3,8 +3,11 @@ import Header from '../header';
 import Footer from '../footer';
 import { motion } from 'framer-motion';
 
-import img1 from '../../assets/groups/catequesis/photo1.jpg';
-import img2 from '../../assets/groups/catequesis/photo1.jpg';
+import img1 from '../../assets/groups/kermes/kermes1.jpg';
+import img2 from '../../assets/groups/kermes/kermes2.jpg';
+import img3 from '../../assets/groups/kermes/kermes3.jpg';
+import img4 from '../../assets/groups/kermes/kermes4.jpg';
+import img5 from '../../assets/groups/kermes/kermes5.jpg';
 
 function Kermes() {
   return (
@@ -17,7 +20,7 @@ function Kermes() {
           <div className="grid grid-cols-2 grid-rows-2 gap-2 w-full max-w-2xl mx-auto min-h-[300px] order-1 lg:order-1">
             <div />
             <motion.img
-              src={img1}
+              src={img4}
               alt="Catequesis 1"
               className="rounded-2xl w-full h-48 sm:h-64 md:h-80 lg:h-[26rem] object-cover shadow-lg col-start-2 row-start-1 transition-all duration-300"
               initial={{ opacity: 0, x: 40, y: -40 }}
@@ -60,19 +63,7 @@ function Kermes() {
       <section className="w-full py-24 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
-            <motion.div
-              className="md:w-1/2 w-full px-4 flex justify-center"
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: false }}
-            >
-              <img
-                src={img1}
-                alt="Nuestra misión"
-                className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
-              />
-            </motion.div>
+
             <motion.div
               className="md:w-1/2 w-full px-4"
               initial={{ opacity: 0, x: 60 }}
@@ -88,6 +79,19 @@ function Kermes() {
                 Cada iniciativa y colaboración ha cimentado los valores que hoy nos identifican como una comunidad activa, fraterna y al servicio de Dios.
               </p>
             </motion.div>
+             <motion.div
+              className="md:w-1/2 w-full px-4 flex justify-center"
+              initial={{ opacity: 0, x: -60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false }}
+            >
+              <img
+                src={img4}
+                alt="Nuestra misión"
+                className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
+              />
+            </motion.div>
           </div>
         </div>
       </section>
@@ -96,7 +100,21 @@ function Kermes() {
       <section className="w-full py-24 bg-white">
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
+           
             <motion.div
+              className="md:w-1/2 w-full px-4 flex justify-center"
+              initial={{ opacity: 0, x: 60 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: false }}
+            >
+              <img
+                src={img2}
+                alt="Kermés historia"
+                className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
+              />
+            </motion.div>
+             <motion.div
               className="md:w-1/2 w-full px-4"
               initial={{ opacity: 0, x: -60 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -110,19 +128,6 @@ function Kermes() {
               <p className="text-lg text-gray-500">
                 Estas primeras kermeses, con una oferta gastronómica básica y una infraestructura sencilla, sentaron las bases de una tradición que ha evolucionado a lo largo de los años.
               </p>
-            </motion.div>
-            <motion.div
-              className="md:w-1/2 w-full px-4 flex justify-center"
-              initial={{ opacity: 0, x: 60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
-              viewport={{ once: false }}
-            >
-              <img
-                src={img1}
-                alt="Kermés historia"
-                className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
-              />
             </motion.div>
           </div>
         </div>
@@ -158,7 +163,7 @@ function Kermes() {
               viewport={{ once: false }}
             >
               <img
-                src={img2}
+                src={img5}
                 alt="Kermés actualidad"
                 className="rounded-3xl object-cover w-full max-w-xl h-[400px] shadow-lg"
               />

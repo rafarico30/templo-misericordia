@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop'; 
 import Header from './components/header';
 import { motion } from "framer-motion";
 import Footer from './components/footer';
@@ -21,7 +22,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
 import backgroundImage from './assets/background2.jpg';
 import ModalServicio from './components/ModalServicio.jsx';
-import cristoAmigoImage from './assets/groups/cristo-amigo/photo1.jpg';
+import cristoAmigoImage from './assets/groups/cristo-amigo/cristoAmigo.jpg';
+import dinamicas from  './assets/groups/dinamicas/dinamicas.jpg';
 import misas from './assets/services/misas.png';
 import notaria from './assets/services/notaria.png';
 import horasSantas from './assets/services/horas-santas.png';
@@ -29,7 +31,7 @@ import sacramentos from './assets/services/sacramentos.png';
 import comunidad from './assets/services/comunidad.png';
 import padreMariano from './assets/padres/padreMariano.jpg';
 import padreLiberio from './assets/padres/padreLiberio.jpg';
-import catequesisImage from './assets/groups/catequesis/photo1.jpg';
+import catequesisImage from './assets/groups/catequesis/catecismo.jpg';
 import nosotros3 from './assets/nosotros/nosotros2.jpg'; // Ajusta la extensión si es diferente
 function Home() { 
   const navigate = useNavigate(); 
@@ -81,12 +83,6 @@ function Home() {
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1, ease: "easeOut", delay: 0.9 }}
 >
-  <button
-    className="bg-yellow-400 text-black text-base md:text-lg font-bold px-6 py-3 rounded hover:bg-header transition"
-    onClick={() => navigate('/nosotros')}
-  >
-    Conócenos
-  </button>
 </motion.div>
   </div>
 </div>
@@ -226,9 +222,9 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
       >
-        <img src={cristoAmigoImage} alt="Dinámicas" className="w-full h-72 object-cover" />
+        <img src={dinamicas} alt="Dinámicas" className="w-full h-72 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
-          <h3 className="text-3xl font-bold mb-4">Dinámicas</h3>
+          <h3 className="text-3xl font-bold mb-4">Dinámicas matrimoniales</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
             Actividades interactivas para fomentar la integración, la reflexión y el aprendizaje comunitario.
           </p>
@@ -236,7 +232,7 @@ function Home() {
       </motion.div>
     </div>
     <div className="mt-10 flex justify-end">
-          <button className="bg-header text-lg text-white font-bold px-10 py-4 rounded-lg hover:bg-red-800">
+          <button className="bg-header text-lg text-white font-bold px-10 py-4 rounded-lg hover:bg-red-800" onClick={() => navigate('/grupos')}>
             Ver más
           </button>
     </div>
@@ -295,7 +291,7 @@ function Home() {
         transition={{ duration: 0.8, ease: "easeOut", delay: 0.6 }}
         viewport={{ once: true }}
       >
-        <button className="bg-white text-black text-xl font-bold px-12 py-5 rounded-lg hover:bg-gray-100 transition border border-gray-200 shadow">
+        <button className="bg-white text-black text-xl font-bold px-12 py-5 rounded-lg hover:bg-gray-100 transition border border-gray-200 shadow" onClick={() => navigate('/nosotros')}>
           Conoce más
         </button>
       </motion.div>
@@ -416,6 +412,7 @@ function Home() {
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />

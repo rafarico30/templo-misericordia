@@ -1,9 +1,51 @@
-import React from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Header from './header';
 import Footer from './footer';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
+
+const sacerdotes = [
+  {
+    nombre: 'S.E.R. Mons. Francisco Moreno Barrón',
+    origen: 'Originario de Salamanca, Guanajuato.',
+    foto: require('../assets/padres/franciscoMoreno.jpg'),
+  },
+  {
+    nombre: 'Pbro. Manuel Villicaña Rivera',
+    origen: 'Originario de Salamanca, Guanajuato.',
+    foto: require('../assets/padres/manuelVicaña.jpg'),
+  },
+  {
+    nombre: 'Pbro. Jesús Díaz Lule',
+    origen: 'Originario de Salamanca, Guanajuato.',
+    foto: require('../assets/padres/jesusDiaz.jpg'),
+  },
+  {
+    nombre: 'Pbro. Antonio Espinoza',
+    origen: 'Originario de Salamanca, Guanajuato.',
+    foto: require('../assets/padres/antonioEspinoza.jpg'),
+  },
+  {
+    nombre: 'Pbro. Mariano Colin García',
+    origen: 'Originario de Salamanca, Guanajuato.',
+    foto: require('../assets/padres/marianoColin.jpg'),
+  },
+];
 
 function Historia() {
+  const [pagina, setPagina] = useState(1);
+  const porPagina = 2;
+  const totalPaginas = Math.ceil(sacerdotes.length / porPagina);
+  const visibles = sacerdotes.slice((pagina - 1) * porPagina, pagina * porPagina);
+
+  const sacerdotesRef = useRef(null);
+
+  useEffect(() => {
+    if (sacerdotesRef.current) {
+      sacerdotesRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [pagina]);
+
+
   return (
     <div>
       <Header />
@@ -136,54 +178,75 @@ function Historia() {
         </div>
       </section>
 
-<section className="w-full py-24 bg-white">
-  <div className="container mx-auto">
-    <div className="flex flex-col md:flex-row justify-center gap-12 mb-12">
-      {/* Sacerdote 1 */}
-      <div className="flex flex-col md:flex-row items-center bg-gray-50 rounded-2xl p-8 w-full md:w-1/2 max-w-2xl">
-        <img
-          src={require('../assets/padres/franciscoMoreno.jpg')}
-          alt="Pbro. Mariano"
-          className="w-48 h-56 object-cover rounded-2xl mb-6 md:mb-0 md:mr-8"
-        />
-        <div className="flex-1">
-          <h3 className="text-2xl font-bold mb-2">S.E.R. Mons. Francisco Moreno Barrón.</h3>
-          <hr className="mb-4"/>
-          <p className="text-gray-600 mb-6">
-           Originario de Salamanca, Guanajuato.
-             </p>
-        </div>
-      </div>
-      {/* Sacerdote 2 */}
-      <div className="flex flex-col md:flex-row items-center bg-gray-50 rounded-2xl p-8 w-full md:w-1/2 max-w-2xl">
-        <img
-          src={require('../assets/padres/manuelVicaña.jpg')}
-          alt="Pbro. Liberio"
-          className="w-48 h-56 object-cover rounded-2xl mb-6 md:mb-0 md:mr-8"
-        />
-        <div className="flex-1">
-          <h3 className="text-2xl font-bold mb-2">Pbro. Manuel Villicaña Rivera</h3>
-          <hr className="mb-4"/>
-          <p className="text-gray-600 mb-6">
-            Originario de Salamanca, Guanajuato.
-             </p>
+<section className="w-full py-24 bg-white" ref={sacerdotesRef}>
+        <div className="container mx-auto">
+          <motion.h2
+            className="text-4xl lg:text-5xl font-bold mb-12 text-center text-dark"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            Nuestros Sacerdotes
+          </motion.h2>
 
+          <div className="flex flex-col md:flex-row justify-center gap-12 mb-12 flex-wrap">
+            {visibles.map((sacerdote, index) => (
+              <motion.div
+                key={index}
+                className="flex flex-col md:flex-row items-center bg-gray-50 rounded-2xl p-8 w-full md:w-1/2 max-w-2xl shadow-md"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.2 }}
+                viewport={{ once: true }}
+              >
+                <img
+                  src={sacerdote.foto}
+                  alt={sacerdote.nombre}
+                  className="w-48 h-56 object-cover rounded-2xl mb-6 md:mb-0 md:mr-8"
+                />
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-2">{sacerdote.nombre}</h3>
+                  <hr className="mb-4" />
+                  <p className="text-gray-600 mb-6">{sacerdote.origen}</p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Paginación funcional */}
+          <div className="flex items-center justify-center gap-8 mt-8">
+            <button
+              className="text-2xl disabled:text-gray-300"
+              disabled={pagina === 1}
+              onClick={() => setPagina(pagina - 1)}
+            >
+              {'←'}
+            </button>
+
+            <div>
+              <div className="w-32 h-1 bg-gray-200 rounded-full mb-2">
+                <div
+                  className="h-1 bg-indigo-500 rounded-full"
+                  style={{ width: `${(pagina / totalPaginas) * 100}%` }}
+                ></div>
+              </div>
+              <span className="text-lg font-medium">
+                {pagina} / {totalPaginas}
+              </span>
+            </div>
+
+            <button
+              className="text-2xl disabled:text-gray-300"
+              disabled={pagina === totalPaginas}
+              onClick={() => setPagina(pagina + 1)}
+            >
+              {'→'}
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
-    {/* Paginación */}
-    <div className="flex items-center justify-center gap-8 mt-8">
-      <button className="text-2xl">{'←'}</button>
-      <div>
-        <div className="w-32 h-1 bg-gray-200 rounded-full mb-2">
-          <div className="w-1/4 h-1 bg-indigo-500 rounded-full"></div>
-        </div>
-        <span className="text-lg font-medium">1 / 4</span>
-      </div>
-      <button className="text-2xl">{'→'}</button>
-    </div>
-  </div>
-</section>
+      </section>
+
       <Footer />
     </div>
   );
