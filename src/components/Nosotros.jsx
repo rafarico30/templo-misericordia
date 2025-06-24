@@ -14,7 +14,7 @@ function Nosotros() {
       <>
         <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
           <div className="container mx-auto">
-            <div className="flex flex-col lg:flex-row items-start -mx-4">
+            <div className="flex flex-col lg:flex-row items-start -mx-0">
               <div className="w-full px-2 lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left">
                 <motion.h2
                   className="mt-32 mb-4 text-4xl lg:text-7xl font-bold text-dark dark:text-black leading-tight"

@@ -23,7 +23,7 @@ function Groups() {
         </div>
       </section>
       <section className="py-16 bg-white">
-        <div className="container mx-auto">
+        <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center">
             {/* Catequesis */}
             <motion.div

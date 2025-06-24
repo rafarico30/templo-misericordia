@@ -1,32 +1,33 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Header from './header';
 import Footer from './footer';
-import { motion } from 'framer-motion';
+import { motion, AnimatePresence } from "framer-motion";
+
 
 const sacerdotes = [
   {
     nombre: 'S.E.R. Mons. Francisco Moreno Barrón',
-    origen: 'Originario de Salamanca, Guanajuato.',
+    origen: 'Con una visión y dedicación inquebrantables, Monseñor Moreno llevó a cabo las gestiones necesarias para que la capilla fuera elevada al estatus de parroquia en 1999, convirtiéndose así en su primer párroco oficial.',
     foto: require('../assets/padres/franciscoMoreno.jpg'),
   },
   {
     nombre: 'Pbro. Manuel Villicaña Rivera',
-    origen: 'Originario de Salamanca, Guanajuato.',
+    origen: 'El Padre Manuel Villicaña Rivera asumió la dirección de la parroquia en Octubre del 2000. Su gestión se enfocaba en la colaboración comunitaria para hacer realidad la visión de una parroquia totalmente edificada.',
     foto: require('../assets/padres/manuelVicaña.jpg'),
   },
   {
     nombre: 'Pbro. Jesús Díaz Lule',
-    origen: 'Originario de Salamanca, Guanajuato.',
+    origen: 'Estuvo alrededor de un año en la capilla de Guadalupe, apoyando en la vida pastoral y acompañando a la comunidad en sus actividades.',
     foto: require('../assets/padres/jesusDiaz.jpg'),
   },
   {
     nombre: 'Pbro. Antonio Espinoza',
-    origen: 'Originario de Salamanca, Guanajuato.',
+    origen: 'Durante su servicio, se logra completar al cien por ciento la construcción de la parroquia, marcando un hito importante en la historia de la comunidad. ',
     foto: require('../assets/padres/antonioEspinoza.jpg'),
   },
   {
     nombre: 'Pbro. Mariano Colin García',
-    origen: 'Originario de Salamanca, Guanajuato.',
+    origen: 'Sucesor del padre Antonio, asume el Presbítero Mariano Colín García, actual párroco, quien es el encargado de celebrar el 25 aniversario de la parroquia. Su principal propósito es, ante todo, agradecer a Jesús Misericordioso la bendición de su presencia en nuestra comunidad. ',
     foto: require('../assets/padres/marianoColin.jpg'),
   },
 ];
@@ -185,34 +186,43 @@ function Historia() {
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
-            Nuestros Sacerdotes
+            Párrocos de nuestra historia
           </motion.h2>
 
-          <div className="flex flex-col md:flex-row justify-center gap-12 mb-12 flex-wrap">
-            {visibles.map((sacerdote, index) => (
-              <motion.div
-                key={index}
-                className="flex flex-col md:flex-row items-center bg-gray-50 rounded-2xl p-8 w-full md:w-1/2 max-w-2xl shadow-md"
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.2 }}
-                viewport={{ once: true }}
-              >
-                <img
-                  src={sacerdote.foto}
-                  alt={sacerdote.nombre}
-                  className="w-48 h-56 object-cover rounded-2xl mb-6 md:mb-0 md:mr-8"
-                />
-                <div className="flex-1">
-                  <h3 className="text-2xl font-bold mb-2">{sacerdote.nombre}</h3>
-                  <hr className="mb-4" />
-                  <p className="text-gray-600 mb-6">{sacerdote.origen}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+          <AnimatePresence mode="wait">
+  <motion.div
+    key={pagina} // Detecta cambio de página
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -20 }}
+    transition={{ duration: 0.4, ease: "easeInOut" }}
+    className="flex flex-col md:flex-row justify-center gap-12 mb-12 flex-wrap"
+  >
+    {visibles.map((sacerdote, index) => (
+      <motion.div
+        key={index}
+        className="flex flex-col md:flex-row items-center bg-gray-50 rounded-2xl p-8 w-full md:w-1/2 max-w-2xl"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.3, delay: index * 0.1 }}
+      >
+        <img
+          src={sacerdote.foto}
+          alt={sacerdote.nombre}
+          className="w-48 h-56 object-cover rounded-2xl mb-6 md:mb-0 md:mr-8"
+        />
+        <div className="flex-1">
+          <h3 className="text-2xl font-bold mb-2">{sacerdote.nombre}</h3>
+          <hr className="mb-4" />
+          <p className="text-gray-600 mb-6">{sacerdote.origen}</p>
+        </div>
+      </motion.div>
+    ))}
+  </motion.div>
+</AnimatePresence>
+
 
           {/* Paginación funcional */}
           <div className="flex items-center justify-center gap-8 mt-8">

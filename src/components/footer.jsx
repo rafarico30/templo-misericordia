@@ -18,7 +18,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:opacity-75"
           >
-            <img src={facebookIcon} alt="Facebook" className="h-8 w-8" />
+            <img src={facebookIcon} alt="Facebook" className="h-6 w-6" />
           </a>
           <a
             href="https://open.spotify.com/playlist/50blhcjJQqqOnjHwYRm9mJ?si=2v8PZ3pxR2me6tS6HIKcPQ"
@@ -26,7 +26,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:opacity-75"
           >
-            <img src={spotifyIcon} alt="Spotify" className="h-8 w-8" />
+            <img src={spotifyIcon} alt="Spotify" className="h-6 w-6" />
           </a>
           <a
             href="https://maps.app.goo.gl/uLVwPzfUXuFbazASA"
@@ -34,7 +34,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:opacity-75"
           >
-            <img src={gpsIcon} alt="GPS" className="h-8 w-8" />
+            <img src={gpsIcon} alt="GPS" className="h-6 w-6" />
           </a>
           <a
             href="tel:+4433269144"
@@ -42,7 +42,7 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:opacity-75"
           >
-            <img src={smartphoneIcon} alt="Smartphone" className="h-8 w-8" />
+            <img src={smartphoneIcon} alt="Smartphone" className="h-6 w-6" />
           </a>
           <a
             href="#"
@@ -50,10 +50,10 @@ function Footer() {
             rel="noopener noreferrer"
             className="hover:opacity-75"
           >
-            <img src={mailIcon} alt="Mail" className="h-8 w-8" />
+            <img src={mailIcon} alt="Mail" className="h-6 w-6" />
           </a>
         </div>
-        <p className="text-lg text-black font-bold">
+        <p className="text-md text-black font-bold">
           &copy; {currentYear} Todos los derechos reservados
         </p>
       </div>

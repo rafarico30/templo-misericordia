@@ -46,7 +46,7 @@ function Home() {
   const cerrarModal = () => setModalOpen(false);
 
   return (
-    <div>
+    <div  >
       <Header />
       <div
   className="bg-cover bg-[center_right_30%] h-screen flex items-center justify-start"
@@ -54,7 +54,7 @@ function Home() {
 >
   <div className="p-8 md:p-16 lg:py-32 max-w-2xl bg-transparent rounded-xl">
     <motion.h1
-      className="font-script italic text-white text-5xl md:text-7xl mb-2 drop-shadow-lg"
+      className="font-script italic text-white text-6xl md:text-7xl mb-2 drop-shadow-lg"
       initial={{ opacity: 0, x: -80 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
@@ -62,7 +62,7 @@ function Home() {
       Parroquia de
     </motion.h1>
     <motion.span
-      className="block font-script italic text-white text-4xl md:text-9xl font-bold mb-4 drop-shadow-lg"
+      className="block font-script italic text-white text-7xl md:text-9xl font-bold mb-4 drop-shadow-lg"
       initial={{ opacity: 0, x: -80 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
@@ -70,7 +70,7 @@ function Home() {
       El Señor de La <br /> Misericordia
     </motion.span>
     <motion.p
-        className="text-white text-lg md:text-2xl mb-8 drop-shadow-lg"
+        className="text-white text-2xl md:text-2xl mb-8 drop-shadow-lg"
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
@@ -87,7 +87,7 @@ function Home() {
   </div>
 </div>
 
-<section className="w-full flex justify-center -mt-32 relative z-10">
+<section className="w-full flex justify-center -mt-24 relative z-10">
   <div className="bg-white rounded-3xl shadow-2xl p-12 md:p-20 max-w-screen-xl w-full mx-4">
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
       {/* Servicio 1 */}
@@ -98,8 +98,8 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
       >
-        <img src={misas} alt="Misas dominicales" className="w-24 h-24 mb-4" />
-        <h3 className="text-2xl font-bold mb-2">Misas dominicales</h3>
+        <img src={misas} alt="Misas dominicales" className="w-20 h-20 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Misas dominicales</h3>
         <p className="text-gray-600 mb-4">
           Celebración de la Eucaristía todos los domingos para toda la comunidad.
         </p>
@@ -114,8 +114,8 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
       >
-        <img src={notaria} alt="Notaría parroquial" className="w-24 h-24 mb-4" />
-        <h3 className="text-2xl font-bold mb-2">Notaría parroquial</h3>
+        <img src={notaria} alt="Notaría parroquial" className="w-20 h-240 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Notaría parroquial</h3>
         <p className="text-gray-600 mb-4">
           Trámites y documentos eclesiásticos para los fieles de la parroquia.
         </p>
@@ -130,8 +130,8 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
       >
-        <img src={horasSantas} alt="Horas santas" className="w-24 h-24 mb-4" />
-        <h3 className="text-2xl font-bold mb-2">Horas santas</h3>
+        <img src={horasSantas} alt="Horas santas" className="w-20 h-20 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Horas santas</h3>
         <p className="text-gray-600 mb-4">
           Espacios de adoración y oración ante el Santísimo Sacramento.
         </p>
@@ -146,8 +146,8 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
       >
-        <img src={sacramentos} alt="Sacramentos" className="w-24 h-24 mb-4" />
-        <h3 className="text-2xl font-bold mb-2">Sacramentos</h3>
+        <img src={sacramentos} alt="Sacramentos" className="w-20 h-20 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Sacramentos</h3>
         <p className="text-gray-600 mb-4">
           Bautizos, primeras comuniones, confirmaciones, matrimonios y más.
         </p>
@@ -162,8 +162,8 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
       >
-        <img src={comunidad} alt="Comunidad parroquial" className="w-24 h-24 mb-4" />
-        <h3 className="text-2xl font-bold mb-2">Comunidad parroquial</h3>
+        <img src={comunidad} alt="Comunidad parroquial" className="w-20 h-20 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Comunidad parroquial</h3>
         <p className="text-gray-600 mb-4">
           Espacios de encuentro, formación y servicio para toda la comunidad.
         </p>
@@ -178,7 +178,7 @@ function Home() {
       <div className="bg-gray-100 flex flex-col items-center justify-center py-12 px-4">
 
 <section className="w-full bg-white py-20">
-  <div className="max-w-screen-2xl mx-auto px-0">
+  <div className="max-w-screen-xl mx-auto px-0">
     <h2 className="text-5xl font-bold text-center mb-4">Grupos parroquiales</h2>
     <p className="text-xl text-gray-500 text-center mb-14">Conoce y participa en nuestros grupos de comunidad</p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -192,7 +192,7 @@ function Home() {
       >
         <img src={cristoAmigoImage} alt="Xto amigo" className="w-full h-72 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
-          <h3 className="text-3xl font-bold mb-4">Xto amigo</h3>
+          <h3 className="text-2xl font-bold mb-4">Xto amigo</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
             Grupo de formación y encuentro con Cristo dirigido a adolescentes y jóvenes.
           </p>
@@ -208,7 +208,7 @@ function Home() {
       >
         <img src={catequesisImage} alt="Catequesis" className="w-full h-72 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
-          <h3 className="text-3xl font-bold mb-4">Catequesis</h3>
+          <h3 className="text-2xl font-bold mb-4">Catequesis</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
             Preparación espiritual para recibir el sacramento de la Confirmación.
           </p>
@@ -224,7 +224,7 @@ function Home() {
       >
         <img src={dinamicas} alt="Dinámicas" className="w-full h-72 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
-          <h3 className="text-3xl font-bold mb-4">Dinámicas matrimoniales</h3>
+          <h3 className="text-2xl font-bold mb-4">Dinámicas matrimoniales</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
             Actividades interactivas para fomentar la integración, la reflexión y el aprendizaje comunitario.
           </p>
@@ -232,7 +232,7 @@ function Home() {
       </motion.div>
     </div>
     <div className="mt-10 flex justify-end">
-          <button className="bg-header text-lg text-white font-bold px-10 py-4 rounded-lg hover:bg-red-800" onClick={() => navigate('/grupos')}>
+          <button className="bg-header text-md text-white font-bold px-8 py-2 rounded-lg hover:bg-red-800" onClick={() => navigate('/grupos')}>
             Ver más
           </button>
     </div>
@@ -341,7 +341,7 @@ function Home() {
 </section>
 
 <section className="w-full py-24 bg-white/80">
-  <div className="max-w-screen-2xl mx-auto px-0">
+  <div className="max-w-screen-xl mx-auto px-0">
     <h2 className="text-5xl font-bold text-center mb-4">Testimonios</h2>
     <p className="text-xl text-gray-600 text-center mb-14">Lo que dicen los miembros de nuestra comunidad</p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">

@@ -17,7 +17,7 @@ function Header() {
           <img src={logo} alt="Logo" className="h-12 w-12" />
           </Link>
           <div>
-            <span className="flex items-center font-bold text-xl text-yellow-400">
+            <span className="flex items-center font-bold text-lg text-yellow-400">
               <FontAwesomeIcon icon={faHeart} className="mr-2" />
               El Señor de la Misericordia
             </span>
@@ -30,7 +30,7 @@ function Header() {
           className="md:hidden text-white focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          <FontAwesomeIcon icon={faBars} className="text-2xl" />
+          <FontAwesomeIcon icon={faBars} className="text-xl" />
         </button>
 
         {/* Menú principal */}
@@ -43,7 +43,7 @@ function Header() {
             <li>
               <Link
                 to="/"
-                className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400"
+                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Inicio
@@ -52,24 +52,24 @@ function Header() {
             <li>
               <Link
                 to="/nosotros"
-                className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400"
+                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Nosotros
               </Link>
             </li>
             <li>
-              <a href="/grupos" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
+              <a href="/grupos" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
                 Grupos
               </a>
             </li>
             <li>
-              <a href="/historia" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
+              <a href="/historia" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
                 Historia
               </a>
             </li>
             <li>
-              <a href="/contacto" className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400">
+              <a href="/contacto" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
                 Contacto
               </a>
             </li>
