@@ -189,7 +189,7 @@ const sliderSettings = {
                   Los retiros espirituales son parte fundamental de la formación del grupo Cristo Amigo. Estos retiros se realizan varias veces al año y son una oportunidad para desconectarse de la vida diaria y profundizar en tu relación con Dios.
                    </p>
                 <p className="text-lg text-gray-500">
-                 Existen para jóvenes y adolescentes, si estás interesado en participar, no dudes en contactarnos para más información. ¡Tu no estás solo, Cristo está contigo!
+                  Ornare2 aenean euismod elementum nisi quis eleifend. Enim nulla aliquet porttitor lacus luctus accumsan tortor posuere.
                 </p>
               </motion.div>
               <motion.div
