@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 function Groups() {
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
       <section
         className="relative w-full h-[350px] flex items-center justify-center"
@@ -24,7 +24,7 @@ function Groups() {
       </section>
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 md:px-12 lg:px-20 xl:px-24">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 justify-items-center">
+          <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-3 justify-items-center">
             {/* Catequesis */}
             <motion.div
               className="flex flex-col items-center bg-white rounded-[2rem] shadow-lg p-0 w-full max-w-xl"
@@ -36,7 +36,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/catequesis/catecismo.jpg')}
                 alt="Grupo 1"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -61,7 +61,7 @@ function Groups() {
                 El grupo de catequesis de la parroquia, busca formar a los niños en la fe cristiana, ayudándoles a conocer, amar y seguir a Jesucristo. 
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -83,7 +83,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/cenOracion/cenOracion.jpg')}
                 alt="Grupo 2"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -108,7 +108,7 @@ function Groups() {
                 Este grupo tiene como objetivo principal fomentar una experiencia personal y comunitaria de Dios a través de la oración y la reflexión de la Palabra de Dios.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -130,7 +130,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/kermes/kermess.jpg')}
                 alt="Grupo 3"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -155,7 +155,7 @@ function Groups() {
                 Desde su fundación, han sido las encargadas de crear un ambiente cálido y familiar a través de deliciosas comidas y actividades comunitarias.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -177,7 +177,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/cristo-amigo/cristoAmigo.jpg')}
                 alt="Grupo 4"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -202,7 +202,7 @@ function Groups() {
                 Fundado en 1998 por Mons. Francisco Moreno Barrón, el grupo juvenil de nuestra parroquia ha sido un espacio de encuentro y crecimiento espiritual para jóvenes y adolescentes.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -224,7 +224,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/dinamicas/dinamicas.jpg')}
                 alt="Grupo 5"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -249,7 +249,7 @@ function Groups() {
                 Su misión es servir, compartir, convivir y recibir a los matrimonios que sufren desintegración, concientizándolos del amor de Dios, reviviendo los valores y solidaridad en familia.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -271,7 +271,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/escPastoral/escPastoral.jpg')}
                 alt="Grupo 6"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -296,7 +296,7 @@ function Groups() {
                 La Escuela de Pastoral tiene como misión principal formar laicos comprometidos con la Iglesia, brindándoles una formación integral que les permita crecer espiritualmente y adquirir las herramientas necesarias para ser agentes activos de evangelización
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -318,7 +318,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/liturgia/liturgia.jpg')}
                 alt="Grupo 7"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -343,7 +343,7 @@ function Groups() {
                 El grupo de liturgia tiene varios propósitos: santificar a las personas, edificar el pueblo de Cristo y adorar a Dios a través de una participación gozosa y comunitaria.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -365,7 +365,7 @@ function Groups() {
               <motion.img
                 src={require('../assets/groups/monaguillos/monaguillos.jpg')}
                 alt="Grupo 8"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
@@ -390,7 +390,7 @@ function Groups() {
                El grupo de monaguillos desempeña un papel fundamental en la liturgia de la Iglesia, cuya misión principal es asistir al sacerdote durante las celebraciones contribuyendo a la belleza y solemnidad de las misas.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
@@ -409,17 +409,17 @@ function Groups() {
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}
               viewport={{ once: false }}
             >
-              <motion.img
+                <motion.img
                 src={require('../assets/groups/pastoralSocial/pastoralSocial.jpg')}
                 alt="Grupo 9"
-                className="rounded-[2rem] w-full h-[320px] object-cover mb-8"
+                className="rounded-[2rem] h-auto max-h-[320px] sm:h-[300px] md:h-[320px] object-cover mb-8"
                 initial={{ scale: 0.95, opacity: 0 }}
                 whileInView={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.7, ease: "easeOut" }}
                 viewport={{ once: false }}
               />
               <motion.h3
-                className="text-3xl font-bold text-center mb-4 leading-tight"
+                className="text-3xl font-bold text-center mb-4 leading-tight "
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
@@ -437,7 +437,7 @@ function Groups() {
                 Este grupo, dedicado a promover la vivencia del Evangelio desde la Doctrina Social de la Iglesia con programas concretos que den testimonios del amor de Dios para transformar nuestra sociedad conforme al Reino de justicia, amor y paz.
               </motion.p>
               <motion.a
-                className="bg-yellow-400 text-black text-xl font-semibold px-12 py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
+                className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}

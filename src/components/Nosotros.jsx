@@ -9,43 +9,43 @@ import img3 from '../assets/nosotros/nosotros3.jpg';
 import { motion } from "framer-motion";
 function Nosotros() {
   return (
-    <div>
+    <div className='overflow-x-hidden'>
       <Header />
       <>
         <section className="overflow-hidden pt-20 pb-12 lg:pt-[120px] lg:pb-[90px] bg-white dark:bg-dark">
-          <div className="container mx-auto">
+          <div className="container mx-auto px-4">
             <div className="flex flex-col lg:flex-row items-start -mx-0">
-              <div className="w-full px-2 lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left">
-                <motion.h2
-                  className="mt-32 mb-4 text-4xl lg:text-7xl font-bold text-dark dark:text-black leading-tight"
-                  initial={{ opacity: 0, y: -60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut" }}
-                  viewport={{ once: false }}
-                >
-                  “Aleluya, la Misericordia del Señor es eterna, Aleluya...”
-                </motion.h2>
-                <motion.h3
-                  className="mb-6 text-2xl font-semibold text-dark dark:text-black"
-                  initial={{ opacity: 0, y: -40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                  viewport={{ once: false }}
-                >
-                  SALMO 117,2
-                </motion.h3>
-                <motion.p
-                  className="mt-6 mb-5 text-xl lg:text-3xl text-gray-600 dark:text-dark-6 font-semibold max-w-2xl"
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                  viewport={{ once: false }}
-                >
-                  Nuestra parroquia, El Señor de la Misericordia, es fruto del compromiso y la fe de una comunidad unida, que ha florecido bajo la guía amorosa de Dios y la protección maternal de la Santísima Virgen María.
-                </motion.p>
-              </div>
+             <div className="w-full px-2 lg:w-7/12 flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
+      <motion.h2
+        className="mt-10 md:mt-20 lg:mt-32 mb-4 text-4xl lg:text-7xl font-bold text-dark dark:text-black leading-tight"
+        initial={{ opacity: 0, y: -60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        viewport={{ once: false }}
+      >
+        “Aleluya, la Misericordia del Señor es eterna, Aleluya...”
+      </motion.h2>
+      <motion.h3
+        className="mb-6 text-2xl font-semibold text-dark dark:text-black"
+        initial={{ opacity: 0, y: -40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+        viewport={{ once: false }}
+      >
+        SALMO 117,2
+      </motion.h3>
+      <motion.p
+        className="mt-6 mb-5 text-xl lg:text-3xl text-gray-600 dark:text-dark-6 font-semibold max-w-2xl"
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+        viewport={{ once: false }}
+      >
+        Nuestra parroquia, El Señor de la Misericordia, es fruto del compromiso y la fe de una comunidad unida, que ha florecido bajo la guía amorosa de Dios y la protección maternal de la Santísima Virgen María.
+      </motion.p>
+    </div>
               {/* Imágenes a la derecha */}
-              <div className="w-full px-4 lg:w-6/12 flex justify-center">
+              <div className="w-full px-4 lg:w-6/12 flex justify-center order-1 lg:order-2">
                 <div className="grid grid-cols-2 gap-4 items-center">
                   {/* img3 a la izquierda ocupando dos filas */}
                   <motion.div
@@ -58,7 +58,7 @@ function Nosotros() {
                     <img
                       src={img3}
                       alt="Nosotros 3"
-                      className="w-full h-full rounded-2xl object-cover"
+                      className="w-full h-56 sm:h-56 md:h-72 lg:h-96 rounded-2xl object-cover"
                     />
                   </motion.div>
                   {/* img1 arriba a la derecha */}
@@ -71,7 +71,7 @@ function Nosotros() {
                     <img
                       src={img1}
                       alt="Nosotros 1"
-                      className="w-full h-full rounded-2xl object-cover"
+                      className="w-full h-56 sm:h-56 md:h-72 lg:h-96 rounded-2xl object-cover"
                     />
                   </motion.div>
                   {/* img2 abajo a la derecha */}
@@ -84,7 +84,7 @@ function Nosotros() {
                     <img
                       src={img2}
                       alt="Nosotros 2"
-                      className="w-full h-full rounded-2xl object-cover"
+                      className="w-full h-56 sm:h-56 md:h-72 lg:h-96 rounded-2xl object-cover"
                     />
                   </motion.div>
                 </div>
@@ -94,7 +94,7 @@ function Nosotros() {
         </section>
 
 <section className="w-full py-24 bg-white">
-  <div className="container mx-auto">
+  <div className="container mx-auto px-4">
     {/* Sección Patrono: texto izquierda, foto derecha */}
    <div className="flex flex-col md:flex-row items-center mb-24 gap-12">
   {/* Foto a la izquierda */}
@@ -152,7 +152,7 @@ function Nosotros() {
                 </motion.h2>
     <section className="w-full py-24 bg-white">
       
-  <div className="container mx-auto">
+  <div className="container mx-auto px-4">
     {/* Primer bloque: texto izquierda, foto derecha */}
     
     <div className="flex flex-col md:flex-row items-center mb-24 gap-12">

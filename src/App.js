@@ -178,7 +178,7 @@ function Home() {
       <div className="bg-gray-100 flex flex-col items-center justify-center py-12 px-4">
 
 <section className="w-full bg-white py-20">
-  <div className="max-w-screen-xl mx-auto px-0">
+  <div className="max-w-screen-2xl mx-auto px-0">
     <h2 className="text-5xl font-bold text-center mb-4">Grupos parroquiales</h2>
     <p className="text-xl text-gray-500 text-center mb-14">Conoce y participa en nuestros grupos de comunidad</p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -190,7 +190,7 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
       >
-        <img src={cristoAmigoImage} alt="Xto amigo" className="w-full h-72 object-cover" />
+        <img src={cristoAmigoImage} alt="Xto amigo" className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
           <h3 className="text-2xl font-bold mb-4">Xto amigo</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
@@ -206,7 +206,7 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
       >
-        <img src={catequesisImage} alt="Catequesis" className="w-full h-72 object-cover" />
+        <img src={catequesisImage} alt="Catequesis" className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover" />
         <div className="p-8 flex-1 flex flex-col text-left">
           <h3 className="text-2xl font-bold mb-4">Catequesis</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
@@ -222,7 +222,7 @@ function Home() {
         viewport={{ once: false }}
         transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
       >
-        <img src={dinamicas} alt="Dinámicas" className="w-full h-72 object-cover" />
+        <img src={dinamicas} alt="Dinámicas" className="w-full h-56 sm:h-64 md:h-72 lg:h-80 object-cover " />
         <div className="p-8 flex-1 flex flex-col text-left">
           <h3 className="text-2xl font-bold mb-4">Dinámicas matrimoniales</h3>
           <p className="text-gray-600 text-lg mb-4 flex-1">
@@ -341,7 +341,7 @@ function Home() {
 </section>
 
 <section className="w-full py-24 bg-white/80">
-  <div className="max-w-screen-xl mx-auto px-0">
+  <div className="max-w-screen-2xl mx-auto px-0">
     <h2 className="text-5xl font-bold text-center mb-4">Testimonios</h2>
     <p className="text-xl text-gray-600 text-center mb-14">Lo que dicen los miembros de nuestra comunidad</p>
     <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -400,7 +400,6 @@ function Home() {
         className="fixed bottom-6 right-6 z-50 bg-header text-white rounded-full shadow-lg p-4 hover:bg-red-800 transition"
         aria-label="Volver arriba"
       >
-        {/* Puedes usar un ícono de flecha hacia arriba */}
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
         </svg>

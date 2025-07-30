@@ -27,7 +27,7 @@ function Header() {
 
         {/* Menú hamburguesa */}
         <button
-          className="md:hidden text-white focus:outline-none"
+          className="lg:hidden text-white focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           <FontAwesomeIcon icon={faBars} className="text-xl" />
@@ -37,13 +37,13 @@ function Header() {
         <nav
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } absolute top-16 left-0 w-full bg-header md:static md:block md:w-auto`}
+          } absolute top-16 left-0 w-full bg-header z-50 lg:static lg:block lg:w-auto`}
         >
-          <ul className="flex flex-col md:flex-row md:space-x-6 items-center md:items-center md:ml-auto">
+          <ul className="flex flex-col lg:flex-row lg:space-x-6 items-center lg:items-center lg:ml-auto">
             <li>
               <Link
                 to="/"
-                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
+                className="block py-2 px-4 text-lg font-semibold hover:text-yellow-400"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Inicio
@@ -75,19 +75,33 @@ function Header() {
             </li>
           </ul>
         </nav>
+          <div className="hidden lg:flex items-center space-x-4 ml-6">
+                <a
+                  href="https://www.facebook.com/profile.php?id=100066922358776"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-400"
+                >
+                  <FontAwesomeIcon icon={faFacebookF} />
+                </a>
+                <a
+                  href="https://open.spotify.com/playlist/50blhcjJQqqOnjHwYRm9mJ?si=2v8PZ3pxR2me6tS6HIKcPQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-400"
+                >
+                  <FontAwesomeIcon icon={faSpotify} />
+                </a>
+                <a
+                  href="https://www.instagram.com/xto_amigo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-yellow-400"
+                >
+                  <FontAwesomeIcon icon={faInstagram} />
+                </a>
+</div>
 
-        {/* Redes sociales y botón */}
-        <div className="hidden md:flex items-center space-x-4 ml-6">
-          <a href="https://www.facebook.com/profile.php?id=100066922358776" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400">
-            <FontAwesomeIcon icon={faFacebookF} />
-          </a>
-          <a href="https://open.spotify.com/playlist/50blhcjJQqqOnjHwYRm9mJ?si=2v8PZ3pxR2me6tS6HIKcPQ" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400">
-            <FontAwesomeIcon icon={faSpotify} />
-          </a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-400">
-            <FontAwesomeIcon icon={faInstagram} />
-          </a>
-        </div>
       </div>
     </header>
   );
