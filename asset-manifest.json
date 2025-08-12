@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/templo-misericordia/static/css/main.4c6dc081.css",
-    "main.js": "/templo-misericordia/static/js/main.efc7c7ed.js",
+    "main.js": "/templo-misericordia/static/js/main.27d13f8b.js",
     "static/js/453.fd648d5f.chunk.js": "/templo-misericordia/static/js/453.fd648d5f.chunk.js",
     "static/media/background2.jpg": "/templo-misericordia/static/media/background2.520526e137d8eb72bfe2.jpg",
     "static/media/consejo.jpg": "/templo-misericordia/static/media/consejo.48c6f070db41cf9691ae.jpg",
@@ -34,11 +34,11 @@
     "static/media/antonioEspinoza.jpg": "/templo-misericordia/static/media/antonioEspinoza.6c6ca837db2f40ac3e5f.jpg",
     "index.html": "/templo-misericordia/index.html",
     "main.4c6dc081.css.map": "/templo-misericordia/static/css/main.4c6dc081.css.map",
-    "main.efc7c7ed.js.map": "/templo-misericordia/static/js/main.efc7c7ed.js.map",
+    "main.27d13f8b.js.map": "/templo-misericordia/static/js/main.27d13f8b.js.map",
     "453.fd648d5f.chunk.js.map": "/templo-misericordia/static/js/453.fd648d5f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c6dc081.css",
-    "static/js/main.efc7c7ed.js"
+    "static/js/main.27d13f8b.js"
   ]
 }
