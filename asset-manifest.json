@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/templo-misericordia/static/css/main.4c6dc081.css",
-    "main.js": "/templo-misericordia/static/js/main.27d13f8b.js",
+    "main.css": "/templo-misericordia/static/css/main.18cdf9d9.css",
+    "main.js": "/templo-misericordia/static/js/main.e1c1dc5f.js",
     "static/js/453.fd648d5f.chunk.js": "/templo-misericordia/static/js/453.fd648d5f.chunk.js",
     "static/media/background2.jpg": "/templo-misericordia/static/media/background2.520526e137d8eb72bfe2.jpg",
     "static/media/consejo.jpg": "/templo-misericordia/static/media/consejo.48c6f070db41cf9691ae.jpg",
@@ -32,13 +32,14 @@
     "static/media/manuelVicaña.jpg": "/templo-misericordia/static/media/manuelVicaña.6e2a4b0fbf797fa97cf1.jpg",
     "static/media/kermes.png": "/templo-misericordia/static/media/kermes.650aeaa6b0ff43e970bb.png",
     "static/media/antonioEspinoza.jpg": "/templo-misericordia/static/media/antonioEspinoza.6c6ca837db2f40ac3e5f.jpg",
+    "static/media/franciscoMoreno.jpg": "/templo-misericordia/static/media/franciscoMoreno.d71691fcfe9f736bcaf2.jpg",
     "index.html": "/templo-misericordia/index.html",
-    "main.4c6dc081.css.map": "/templo-misericordia/static/css/main.4c6dc081.css.map",
-    "main.27d13f8b.js.map": "/templo-misericordia/static/js/main.27d13f8b.js.map",
+    "main.18cdf9d9.css.map": "/templo-misericordia/static/css/main.18cdf9d9.css.map",
+    "main.e1c1dc5f.js.map": "/templo-misericordia/static/js/main.e1c1dc5f.js.map",
     "453.fd648d5f.chunk.js.map": "/templo-misericordia/static/js/453.fd648d5f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c6dc081.css",
-    "static/js/main.27d13f8b.js"
+    "static/css/main.18cdf9d9.css",
+    "static/js/main.e1c1dc5f.js"
   ]
 }
