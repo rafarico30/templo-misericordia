@@ -53,7 +53,7 @@ function Nosotros() {
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, ease: "easeOut" }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                   >
                     <img
                       src={img3}
@@ -66,7 +66,7 @@ function Nosotros() {
                     initial={{ opacity: 0, x: 60 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                   >
                     <img
                       src={img1}
@@ -79,7 +79,7 @@ function Nosotros() {
                     initial={{ opacity: 0, x: 60 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
-                    viewport={{ once: false }}
+                    viewport={{ once: true }}
                   >
                     <img
                       src={img2}

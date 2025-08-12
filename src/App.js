@@ -7,15 +7,6 @@ import { motion } from "framer-motion";
 import Footer from './components/footer';
 import Nosotros from './components/Nosotros.jsx';
 import Groups from './components/groups.jsx';
-import CristoAmigo from './components/grupos/cristoAmigo.jsx';
-import Catequesis from './components/grupos/catequesis.jsx';
-import CenOracion from './components/grupos/cenOracion.jsx';
-import Dinamicas from './components/grupos/dinamicas.jsx';
-import Kermes from './components/grupos/kermes.jsx';
-import Liturgia from './components/grupos/liturgia.jsx';
-import Monaguillos from './components/grupos/monaguillos.jsx';
-import Pastoral from './components/grupos/pastoral.jsx';
-import PastoralSocial from './components/grupos/pastoralSocial.jsx';
 import History from './components/historia.jsx';
 import Contact from './components/contacto.jsx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -26,6 +17,7 @@ import cristoAmigoImage from './assets/groups/cristo-amigo/cristoAmigo.jpg';
 import dinamicas from  './assets/groups/dinamicas/dinamicas.jpg';
 import misas from './assets/services/misas.png';
 import notaria from './assets/services/notaria.png';
+import kermes from './assets/services/kermes.png';
 import horasSantas from './assets/services/horas-santas.png';
 import sacramentos from './assets/services/sacramentos.png';
 import comunidad from './assets/services/comunidad.png';
@@ -53,22 +45,22 @@ function Home() {
   style={{ backgroundImage: `url(${backgroundImage})` }}
 >
   <div className="p-8 md:p-16 lg:py-32 max-w-2xl bg-transparent rounded-xl">
-    <motion.h1
-      className="font-script italic text-white text-6xl md:text-7xl mb-2 drop-shadow-lg"
-      initial={{ opacity: 0, x: -80 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: "easeOut" }}
-    >
-      Parroquia de
-    </motion.h1>
-    <motion.span
-      className="block font-script italic text-white text-7xl md:text-9xl font-bold mb-4 drop-shadow-lg"
-      initial={{ opacity: 0, x: -80 }}
-      animate={{ opacity: 1, x: 0 }}
-      transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
-    >
-      El Señor de La <br /> Misericordia
-    </motion.span>
+   <motion.h1
+  className="font-script italic text-white text-4xl sm:text-6xl md:text-7xl mb-2 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl"
+  initial={{ opacity: 0, x: -80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, ease: "easeOut" }}
+>
+  Parroquia de
+</motion.h1>
+<motion.span
+  className="block font-script italic text-white text-5xl sm:text-7xl md:text-9xl font-bold mb-4 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl"
+  initial={{ opacity: 0, x: -80 }}
+  animate={{ opacity: 1, x: 0 }}
+  transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
+>
+  El Señor de La <br /> Misericordia
+</motion.span>
     <motion.p
         className="text-white text-2xl md:text-2xl mb-8 drop-shadow-lg"
         initial={{ opacity: 0, x: -80 }}
@@ -169,6 +161,22 @@ function Home() {
         </p>
         <button className="text-header font-semibold hover:underline"
         onClick={() => abrirModal('comunidad')}>Más información</button>
+      </motion.div>
+       {/* Servicio 5 */}
+      <motion.div
+        className="flex flex-col items-center text-center"
+        initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
+      >
+        <img src={kermes} alt="Kermes dominical" className="w-20 h-20 mb-4" />
+        <h3 className="text-xl font-bold mb-2">Kermés dominical</h3>
+        <p className="text-gray-600 mb-4">
+            Convivencia dominical con antojitos mexicanos para fortalecer la comunidad parroquial.
+        </p>
+        <button className="text-header font-semibold hover:underline"
+        onClick={() => abrirModal('kermes')}>Más información</button>
       </motion.div>
     </div>
   </div>
@@ -417,15 +425,6 @@ function App() {
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/grupos" element={<Groups />} />
         <Route path ="/historia" element= {<History/>} />
-        <Route path ="/catequesis" element= {<Catequesis/>} />
-        <Route path ="/cenaculosOracion" element= {<CenOracion/>} />
-        <Route path="/cristoAmigo" element={<CristoAmigo />} />
-        <Route path ="/dinamicasMatrimoniales" element= {<Dinamicas/>} />
-        <Route path ="/coordinadorasKermes" element= {<Kermes/>} />
-        <Route path ="/liturgia" element= {<Liturgia/>} />
-        <Route path ="/monaguillos" element= {<Monaguillos/>} />
-        <Route path ="/pastoral" element= {<Pastoral/>} />
-        <Route path ="/pastoralSocial" element= {<PastoralSocial/>} />
         <Route path ="/contacto" element= {<Contact/>} />
       </Routes>
     </Router>

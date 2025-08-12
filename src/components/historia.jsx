@@ -40,12 +40,6 @@ function Historia() {
 
   const sacerdotesRef = useRef(null);
 
-  useEffect(() => {
-    if (sacerdotesRef.current) {
-      sacerdotesRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-  }, [pagina]);
-
 
   return (
     <div>

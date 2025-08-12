@@ -26,7 +26,12 @@ const serviciosInfo = {
     titulo: "Comunidad parroquial",
     descripcion: "Espacios de encuentro, formación y servicio para toda la comunidad.",
     detalles: "Participa en grupos, talleres y actividades de integración."
-  }
+  },
+  kermes: {
+  titulo: "Kermés dominical",
+  descripcion: "Convivencia dominical con antojitos mexicanos para fortalecer la comunidad parroquial.",
+  detalles: "Gracias al esfuerzo y cariño de las organizadoras de los grupos parroquiales, las kermeses dominicales son un espacio de encuentro, alegría y servicio para toda la comunidad."
+}
 };
 
 export default function ModalServicio({ open, onClose, servicio }) {

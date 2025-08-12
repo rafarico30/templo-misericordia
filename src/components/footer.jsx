@@ -45,7 +45,7 @@ function Footer() {
             <img src={smartphoneIcon} alt="Smartphone" className="h-6 w-6" />
           </a>
           <a
-            href="#"
+            href="mailto:psenor_misericordia@hotmail.com"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-75"
