@@ -42,7 +42,7 @@ function Historia() {
 
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       <Header />
 
       <section className="w-full py-24 bg-white">
@@ -72,7 +72,7 @@ function Historia() {
     transition={{ duration: 0.8, ease: "easeOut" }}
     viewport={{ once: true }}
   >
-    <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Historia de nuestra parroquia</h2>
+    <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Historia de Nuestra Parroquia</h2>
     <p className="text-xl text-gray-600 mb-6">
       En el año de 1999, ante el creciente número de fieles y la necesidad de mejorar la atención pastoral ofrecida en la parroquia de Nuestra Señora de Guadalupe, el arzobispo de Morelia, Alberto Suárez Inda, tomó la histórica decisión de erigir una nueva parroquia con sede en el templo del Señor de la Misericordia, ubicado en Grafito, N. 35, en la colonia Infonavit la Colina.
     </p>
@@ -136,7 +136,7 @@ function Historia() {
     transition={{ duration: 0.8, ease: "easeOut" }}
     viewport={{ once: true }}
   >
-    <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Lo mejor de la parroquia; Su gente</h2>
+    <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-dark">Lo Mejor de la Parroquia; Su Gente</h2>
     <p className="text-xl text-gray-600 mb-6">
      “Fui párroco de un templo muy bonito de la periferia de la ciudad, con gente sencilla, linda, buena y de trabajo. Estuve en ese templo preparando la erección de la que sería una nueva parroquia y con el paso del tiempo fui el primer párroco de la iglesia del Señor de la Misericordia”. (Moreno Barrón, 2008)
      </p>
@@ -182,7 +182,7 @@ function Historia() {
             transition={{ duration: 0.6 }}
             viewport={{ once: false }}
           >
-            Párrocos de nuestra historia
+            Párrocos de Nuestra Historia
           </motion.h2>
 
           <AnimatePresence mode="wait">

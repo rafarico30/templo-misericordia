@@ -41,7 +41,7 @@ function Contacto() {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: false }}
           >
-            Información útil
+            Información Útil
           </motion.h2>
           <motion.p
             className="text-xl text-center text-gray-500 mb-16"

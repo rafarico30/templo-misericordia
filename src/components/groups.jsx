@@ -44,7 +44,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut" }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('catequesis')} 
             >
               <motion.img
                 src={require('../assets/groups/catequesis/catecismo.jpg')}
@@ -74,6 +73,7 @@ const cerrarModal = () => setModalOpen(false);
                 El grupo de catequesis de la parroquia, busca formar a los niños en la fe cristiana, ayudándoles a conocer, amar y seguir a Jesucristo. 
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('catequesis')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -91,7 +91,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('cenaculos')} 
             >
               <motion.img
                 src={require('../assets/groups/cenOracion/cenOracion.jpg')}
@@ -109,7 +108,7 @@ const cerrarModal = () => setModalOpen(false);
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false }}
               >
-                Cenáculos de oración.
+                Cenáculos de Oración.
               </motion.h3>
               <motion.p
                 className="text-gray-500 text-center mb-6 text-lg"
@@ -121,6 +120,7 @@ const cerrarModal = () => setModalOpen(false);
                 Este grupo tiene como objetivo principal fomentar una experiencia personal y comunitaria de Dios a través de la oración y la reflexión de la Palabra de Dios.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('cenaculos')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -138,7 +138,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('kermes')} 
             >
               <motion.img
                 src={require('../assets/groups/kermes/kermess.jpg')}
@@ -156,7 +155,7 @@ const cerrarModal = () => setModalOpen(false);
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false }}
               >
-                Coordinadoras de kermés
+                Coordinadoras de Kermés
               </motion.h3>
               <motion.p
                 className="text-gray-500 text-center mb-6 text-lg"
@@ -168,6 +167,7 @@ const cerrarModal = () => setModalOpen(false);
                 Desde su fundación, han sido las encargadas de crear un ambiente cálido y familiar a través de deliciosas comidas y actividades comunitarias.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('kermes')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -185,7 +185,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.3 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('cristoAmigo')} 
             >
               <motion.img
                 src={require('../assets/groups/cristo-amigo/cristoAmigo.jpg')}
@@ -215,6 +214,7 @@ const cerrarModal = () => setModalOpen(false);
                 Fundado en 1998 por Mons. Francisco Moreno Barrón, el grupo juvenil de nuestra parroquia ha sido un espacio de encuentro y crecimiento espiritual para jóvenes y adolescentes.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('cristoAmigo')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -232,7 +232,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
               viewport={{ once: false}}
-              onClick={() => abrirModal('dinamicas')} 
             >
               <motion.img
                 src={require('../assets/groups/dinamicas/dinamicas.jpg')}
@@ -250,7 +249,7 @@ const cerrarModal = () => setModalOpen(false);
                 transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
                 viewport={{ once: false }}
               >
-                 Dinámicas matrimoniales
+                 Dinámicas Matrimoniales
               </motion.h3>
               <motion.p
                 className="text-gray-500 text-center mb-6 text-lg"
@@ -262,6 +261,7 @@ const cerrarModal = () => setModalOpen(false);
                 Su misión es servir, compartir, convivir y recibir a los matrimonios que sufren desintegración, concientizándolos del amor de Dios, reviviendo los valores y solidaridad en familia.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('dinamicas')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -279,7 +279,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.5 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('pastoral')} 
             >
               <motion.img
                 src={require('../assets/groups/escPastoral/escPastoral.jpg')}
@@ -309,6 +308,7 @@ const cerrarModal = () => setModalOpen(false);
                 La Escuela de Pastoral tiene como misión principal formar laicos comprometidos con la Iglesia, brindándoles una formación integral que les permita crecer espiritualmente y adquirir las herramientas necesarias para ser agentes activos de evangelización
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('pastoral')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -326,7 +326,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.6 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('liturgia')} 
             >
               <motion.img
                 src={require('../assets/groups/liturgia/liturgia.jpg')}
@@ -356,6 +355,7 @@ const cerrarModal = () => setModalOpen(false);
                 El grupo de liturgia tiene varios propósitos: santificar a las personas, edificar el pueblo de Cristo y adorar a Dios a través de una participación gozosa y comunitaria.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('liturgia')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -373,7 +373,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.7 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('monaguillos')} 
             >
               <motion.img
                 src={require('../assets/groups/monaguillos/monaguillos.jpg')}
@@ -403,6 +402,7 @@ const cerrarModal = () => setModalOpen(false);
                El grupo de monaguillos desempeña un papel fundamental en la liturgia de la Iglesia, cuya misión principal es asistir al sacerdote durante las celebraciones contribuyendo a la belleza y solemnidad de las misas.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('monaguillos')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -420,7 +420,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('pastoralSocial')} 
             >
                 <motion.img
                 src={require('../assets/groups/pastoralSocial/pastoralSocial.jpg')}
@@ -450,6 +449,7 @@ const cerrarModal = () => setModalOpen(false);
                 Este grupo, dedicado a promover la vivencia del Evangelio desde la Doctrina Social de la Iglesia con programas concretos que den testimonios del amor de Dios para transformar nuestra sociedad conforme al Reino de justicia, amor y paz.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('pastoralSocial')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -468,7 +468,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('ministros')} 
             >
                 <motion.img
                 src={require('../assets/groups/ministros/ministros.jpg')}
@@ -498,6 +497,7 @@ const cerrarModal = () => setModalOpen(false);
                Los Ministros Extraordinarios de la Comunión tienen como objetivo principal asistir a nuestros sacerdotes y diáconos en la distribución de la Sagrada Comunión, garantizando que la Eucaristía llegue a todos los fieles.
               </motion.p>
               <motion.button
+                onClick={() => abrirModal('ministros')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -516,7 +516,6 @@ const cerrarModal = () => setModalOpen(false);
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, ease: "easeOut", delay: 0.8 }}
               viewport={{ once: false }}
-              onClick={() => abrirModal('consejo')} 
             >
                 <motion.img
                 src={require('../assets/groups/consejo/consejo.jpg')}
@@ -546,6 +545,7 @@ const cerrarModal = () => setModalOpen(false);
                Como pilar de la vida parroquial en la Iglesia Católica, el Consejo Parroquial es el espacio donde los fieles participan activamente en la planificación pastoral. 
                  </motion.p>
               <motion.button
+                onClick={() => abrirModal('consejo')} 
                 className="bg-yellow-400 text-black text-xl font-semibold px-6 sm:px-8 md:px-12 py-3 sm:py-4 rounded-xl hover:bg-yellow-500 transition mb-8"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}

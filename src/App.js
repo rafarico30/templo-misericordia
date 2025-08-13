@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import ScrollToTop from './components/ScrollToTop'; 
 import Header from './components/header';
 import { motion } from "framer-motion";
@@ -41,12 +41,12 @@ function Home() {
     <div  >
       <Header />
       <div
-  className="bg-cover bg-[center_right_30%] h-screen flex items-center justify-start"
+  className="bg-cover bg-[center_right_30%] min-h-screen flex items-center justify-start"
   style={{ backgroundImage: `url(${backgroundImage})` }}
 >
   <div className="p-8 md:p-16 lg:py-32 max-w-2xl bg-transparent rounded-xl">
    <motion.h1
-  className="font-script italic text-white text-4xl sm:text-6xl md:text-7xl mb-2 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl"
+  className="font-script italic text-white text-7xl sm:text-6xl md:text-7xl mb-2 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl font-bold"
   initial={{ opacity: 0, x: -80 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1, ease: "easeOut" }}
@@ -54,15 +54,15 @@ function Home() {
   Parroquia de
 </motion.h1>
 <motion.span
-  className="block font-script italic text-white text-5xl sm:text-7xl md:text-9xl font-bold mb-4 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl"
+  className="block font-script italic text-white text-7xl sm:text-7xl md:text-9xl font-bold mb-4 drop-shadow-lg max-w-xs sm:max-w-lg md:max-w-2xl"
   initial={{ opacity: 0, x: -80 }}
   animate={{ opacity: 1, x: 0 }}
   transition={{ duration: 1, ease: "easeOut", delay: 0.3 }}
 >
-  El Señor de La <br /> Misericordia
+  El Señor de la <br /> Misericordia
 </motion.span>
     <motion.p
-        className="text-white text-2xl md:text-2xl mb-8 drop-shadow-lg"
+        className="text-white text-3xl md:text-3xl mb-8 drop-shadow-lg"
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
@@ -424,12 +424,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/grupos" element={<Groups />} />
-        <Route path ="/historia" element= {<History/>} />
-        <Route path ="/contacto" element= {<Contact/>} />
+        <Route path="/historia" element={<History />} />
+        <Route path="/contacto" element={<Contact />} />
       </Routes>
     </Router>
   );
 }
+
 
 
 export default App;

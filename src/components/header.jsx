@@ -59,19 +59,31 @@ function Header() {
               </Link>
             </li>
             <li>
-              <a href="/grupos" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
+              <Link
+                to="/grupos"
+                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Grupos
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/historia" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
+              <Link
+                to="/historia"
+                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Historia
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contacto" className="block py-2 px-4 text-md font-semibold hover:text-yellow-400">
+              <Link
+                to="/contacto"
+                className="block py-2 px-4 text-md font-semibold hover:text-yellow-400"
+                onClick={() => setIsMenuOpen(false)}
+              >
                 Contacto
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
